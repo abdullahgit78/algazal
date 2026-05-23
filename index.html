@@ -1,0 +1,262 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>شركة الغزال العقارية</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Cairo', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at top, rgba(212,175,55,0.18), transparent 35%),
+        linear-gradient(180deg, #0b0b0b 0%, #111111 100%);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 15px;
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 430px;
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+
+    .profile-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(212,175,55,0.25);
+      border-radius: 32px;
+      padding: 35px 25px;
+      backdrop-filter: blur(12px);
+      box-shadow:
+        0 0 25px rgba(212,175,55,0.08),
+        0 10px 40px rgba(0,0,0,0.5);
+    }
+
+    .logo-wrapper {
+      position: relative;
+      width: 140px;
+      height: 140px;
+      margin: auto;
+      margin-bottom: 22px;
+    }
+
+    .logo-wrapper::before {
+      content: '';
+      position: absolute;
+      inset: -5px;
+      border-radius: 50%;
+      background: linear-gradient(45deg,#D4AF37,#F7E7A1,#D4AF37);
+      z-index: 0;
+      animation: rotate 6s linear infinite;
+    }
+
+    .profile-img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #111;
+      z-index: 2;
+      background: #000;
+    }
+
+    h1 {
+      font-size: 33px;
+      font-weight: 800;
+      margin-bottom: 6px;
+      background: linear-gradient(90deg,#D4AF37,#fff1a8,#D4AF37);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      color: #d6c27a;
+      font-size: 15px;
+      margin-bottom: 35px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .link-btn {
+      text-decoration: none;
+      color: white;
+      background: linear-gradient(135deg,#1a1a1a,#222222);
+      border: 1px solid rgba(212,175,55,0.28);
+      padding: 17px 20px;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      font-size: 18px;
+      font-weight: 700;
+      transition: 0.35s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .link-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg,transparent,rgba(212,175,55,0.15),transparent);
+      transition: 0.6s;
+    }
+
+    .link-btn:hover::before {
+      left: 100%;
+    }
+
+    .link-btn:hover {
+      transform: translateY(-4px) scale(1.01);
+      border-color: #D4AF37;
+      box-shadow: 0 0 18px rgba(212,175,55,0.18);
+    }
+
+    .link-btn i {
+      font-size: 22px;
+      color: #D4AF37;
+    }
+
+    .footer {
+      margin-top: 28px;
+      color: rgba(255,255,255,0.45);
+      font-size: 13px;
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      .link-btn {
+        font-size: 16px;
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="profile-card">
+
+      <!-- ضع صورتك هنا -->
+      <div class="logo-wrapper">
+        <img src="profile.jpg" alt="شركة الغزال العقارية" class="profile-img">
+      </div>
+
+      <h1>شركة الغزال العقارية</h1>
+
+      <p class="subtitle">
+        تابع جميع منصات شركة الغزال العقارية
+      </p>
+
+      <div class="links">
+
+        <a class="link-btn"
+          href="https://www.facebook.com/share/18PhRvgqnG/"
+          target="_blank">
+          <i class="fab fa-facebook-f"></i>
+          Facebook
+        </a>
+
+        <a class="link-btn"
+          href="https://www.instagram.com/al_ghazal_realty?igsh=bjl4bzdyNmxvN3Fo"
+          target="_blank">
+          <i class="fab fa-instagram"></i>
+          Instagram
+        </a>
+
+        <a class="link-btn"
+          href="https://www.tiktok.com/@user8737790506025?_r=1&_t=ZS-961hqHHzCkb"
+          target="_blank">
+          <i class="fab fa-tiktok"></i>
+          TikTok
+        </a>
+
+        <a class="link-btn"
+          href="https://youtube.com/channel/UCOUSQpEYiTf-LDtvpw8BL5A?si=MYjGDOj3J33Dx0MG"
+          target="_blank">
+          <i class="fab fa-youtube"></i>
+          YouTube
+        </a>
+
+        <a class="link-btn"
+          href="tel:+963993648906">
+          <i class="fas fa-phone"></i>
+          +963993648906
+        </a>
+
+        <a class="link-btn"
+          href="tel:+905551045288">
+          <i class="fas fa-phone"></i>
+          +90 555 104 52 88
+        </a>
+
+      </div>
+
+      <div class="footer">
+        © 2026 شركة الغزال العقارية
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
+
+
